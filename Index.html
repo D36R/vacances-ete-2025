@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vacances été 2025 - Planning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      margin: 0;
+      padding: 0;
+    }
+    .tabs {
+      display: flex;
+      background: #2563eb;
+      border-radius: 8px 8px 0 0;
+      overflow: hidden;
+      margin: 30px auto 0;
+      max-width: 700px;
+      box-shadow: 0 2px 8px #0002;
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 18px 0;
+      cursor: pointer;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 600;
+      transition: background 0.2s;
+      border: none;
+      outline: none;
+    }
+    .tab.active {
+      background: #fff;
+      color: #2563eb;
+    }
+    .tab-content {
+      display: none;
+      background: #fff;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      padding: 32px;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 2px 8px #0002;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .titre-sejour {
+      margin-top: 0;
+      color: #2563eb;
+    }
+    .dates {
+      font-size: 1.1em;
+      color: #444;
+      margin-bottom: 24px;
+    }
+    .surf-schools {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .surf-schools li {
+      margin-bottom: 14px;
+      line-height: 1.4em;
+    }
+    .note {
+      font-style: italic;
+      margin-bottom: 14px;
+      color: #555;
+    }
+    @media (max-width: 750px) {
+      .tab-content, .tabs {
+        max-width: 100%;
+      }
+      .tab-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab(0)">Douarnenez</button>
+    <button class="tab" onclick="showTab(1)">Île aux Moines</button>
+    <button class="tab" onclick="showTab(2)">Quiberon</button>
+  </div>
+
+  <!-- Douarnenez -->
+  <div class="tab-content active">
+    <h2 class="titre-sejour">Appartement · Douarnenez</h2>
+    <div class="dates">📅 25 juillet au 4 août<br>
+      📍 25 Rue des Professeurs Curie, 29100 Douarnenez
+    </div>
+
+    <h3>Écoles de surf adaptées (8 ans)</h3>
+    <ul class="surf-schools">
+      <li><strong>Breizh Road Surfing – Baie de Douarnenez</strong><br>
+          Spots : Plage du Ris &amp; Sables Blancs · Cours « Kids » dès 8 ans.<br>
+          <a href="https://breizhroadsurfing.com/" target="_blank">breizhroadsurfing.com</a>
+      </li>
+      <li><strong>Penn Ar Surf School – Plage de Kervel</strong><br>
+          15 min en voiture · Séances dès 5 ans · Grande plage surveillée, parfait pour rester avec le petit de 4 ans.<br>
+          <a href="https://pennarsurf.bzh/" target="_blank">pennarsurf.bzh</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Île aux Moines -->
+  <div class="tab-content">
+    <h2 class="titre-sejour">Maison · Île aux Moines</h2>
+    <div class="dates">📅 4 août au 8 août<br>
+      📍 11 Rue du Couvent, 56780 Île aux Moines
+    </div>
+
+    <h3>Écoles de surf à proximité</h3>
+    <p class="note">Pas de vagues suffisantes dans le golfe ; il faut sortir côté océan (Presqu’île de Quiberon). Compter ~1 h15 (ferry + route).</p>
+    <ul class="surf-schools">
+      <li><strong>Nature School Quiberon – Plage de Penthièvre</strong><br>
+          Cours famille &amp; enfants dès 8 ans · Grande plage avec zone surveillée.<br>
+          <a href="https://www.natureschoolquiberon.com/" target="_blank">natureschoolquiberon.com</a>
+      </li>
+      <li><strong>Quiberon Surf Paradise – Plage de Port‑Bara</strong><br>
+          Programme « Jardin des vagues » 6‑9 ans · Parents bienvenus sur la plage.<br>
+          <a href="https://www.quiberonsurfparadise.com/" target="_blank">quiberonsurfparadise.com</a>
+      </li>
+      <li><strong>Le Jardin des Vagues – École de Surf de Plouharnel</strong><br>
+          Séances ludiques 5‑8 ans · Spot très accessible et sécurisé.<br>
+          <a href="https://www.ecole-surf.com/jardin-des-vagues/" target="_blank">ecole-surf.com</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quiberon -->
+  <div class="tab-content">
+    <h2 class="titre-sejour">Maison · Quiberon</h2>
+    <div class="dates">📅 8 août au 15 août<br>
+      📍 67 Rue des Ramandeuses, 56170 Quiberon
+    </div>
+
+    <h3>Écoles de surf adaptées (8 ans)</h3>
+    <ul class="surf-schools">
+      <li><strong>Nature School Quiberon – Plage de Penthièvre</strong><br>
+          À 10 min · Cours kids &amp; familles dès 8 ans.<br>
+          <a href="https://www.natureschoolquiberon.com/" target="_blank">natureschoolquiberon.com</a>
+      </li>
+      <li><strong>Quiberon Surf Paradise – Port‑Bara</strong><br>
+          Jardin des vagues 6‑9 ans · Grande plage surveillée → parfait pour rester près du plus jeune.<br>
+          <a href="https://www.quiberonsurfparadise.com/" target="_blank">quiberonsurfparadise.com</a>
+      </li>
+      <li><strong>Le Jardin des Vagues – Plouharnel</strong><br>
+          Programme enfant 5‑8 ans · Spot en pente douce, familial.<br>
+          <a href="https://www.ecole-surf.com/jardin-des-vagues/" target="_blank">ecole-surf.com</a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    function showTab(idx) {
+      document.querySelectorAll('.tab').forEach((el, i) => {
+        el.classList.toggle('active', i === idx);
+      });
+      document.querySelectorAll('.tab-content').forEach((el, i) => {
+        el.classList.toggle('active', i === idx);
+      });
+    }
+  </script>
+</body>
+</html>
