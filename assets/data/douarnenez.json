@@ -1,0 +1,14 @@
+{
+  "balades": [
+    {"titre": "Sentier des Plomarc’h → Plage du Ris", "description": "4 km A/R…", "image": "plomarch.jpg"},
+    …
+  ],
+  "surf": [
+    {"titre": "Spot de Tréboul", "description": "Vagues douces…", "image": "surf_douarnenez1.jpg"},
+    …
+  ],
+  "resto": [
+    {"titre": "Crêperie Le Marin", "description": "Spécialités locales…", "image": "creperie.jpg", "url": "https://…"},
+    …
+  ]
+}
