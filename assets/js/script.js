@@ -1,4 +1,4 @@
-// 1. Charger la liste des destinations et initialiser les onglets
+// Chargement de la liste des destinations et initialisation des onglets
 fetch('assets/data/destinations.json')
   .then(r => r.json())
   .then(destinations => {
@@ -10,21 +10,20 @@ fetch('assets/data/destinations.json')
       btn.onclick = () => showDestination(idx);
       tabs.appendChild(btn);
     });
-    // Afficher la première destination par défaut
     loadDestination(destinations[0], 0);
   })
-  .catch(e => console.error(e));
+  .catch(e => console.error('Erreur fetch destinations:', e));
 
 let destinationsData = [];
 
 function loadDestination(dest, idx) {
-  // Charger le JSON complet pour cette destination
   fetch(`assets/data/${dest.key}.json`)
     .then(r => r.json())
     .then(data => {
       destinationsData[idx] = { dest, data };
       renderTabContent(idx);
-    });
+    })
+    .catch(err => console.error(`Erreur chargement ${dest.key}:`, err));
 }
 
 function renderTabContent(idx) {
@@ -32,43 +31,59 @@ function renderTabContent(idx) {
   const contents = document.getElementById('contents');
   contents.innerHTML = '';
 
-  // Titre et info dates/adresse (à adapter si besoin)
+  // En-tête avec titre de la destination
   const header = document.createElement('div');
-  header.innerHTML = `
-    <h2>${dest.label}</h2>
-    <!-- Dates et adresse statiques ou dynamiques -->
-  `;
+  header.innerHTML = `<h2>${dest.label}</h2>`;
   contents.appendChild(header);
 
-  // Pour chaque rubrique présente dans le JSON
+  // Parcours de chaque section du JSON
   Object.keys(data).forEach(sectionKey => {
+    const items = data[sectionKey];
+    if (!Array.isArray(items) || items.length === 0) return; // ignorer sections vides
+
+    // Création de la section
     const section = document.createElement('section');
-    section.innerHTML = `<h3>${sectionKey.charAt(0).toUpperCase() + sectionKey.slice(1)}</h3><div class="cards"></div>`;
+    section.innerHTML = `<h3>${sectionKey.charAt(0).toUpperCase() + sectionKey.slice(1)}</h3><div class=\"cards\"></div>`;
     const cards = section.querySelector('.cards');
-    data[sectionKey].forEach(item => {
+
+    items.forEach(item => {
+      // Fallbacks pour rendre le script tolérant
+      const title = item.titre || item.nom || 'Titre indisponible';
+      const desc = item.description || item.points_interet || item.specialites || '';
+      let imgSrc = '';
+      if (item.image) {
+        imgSrc = `assets/images/${item.image}`;
+      } else if (item.image_url) {
+        imgSrc = item.image_url;
+      }
+      const url = item.url || item.lien || '';
+
+      // Création de la carte
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
-        <img src="assets/images/${item.image}" alt="${item.titre}">
-        <h4>${item.titre}</h4>
-        <p>${item.description}</p>
-        ${item.url ? `<a href="${item.url}" target="_blank">Voir plus</a>` : ''}
+        ${imgSrc ? `<img src=\"${imgSrc}\" alt=\"${title}\">` : ''}
+        <h4>${title}</h4>
+        <p>${desc}</p>
+        ${url ? `<a href=\"${url}\" target=\"_blank\">Voir plus</a>` : ''}
       `;
       cards.appendChild(card);
     });
+
     contents.appendChild(section);
   });
 }
 
 function showDestination(idx) {
-  // Mettre à jour l'onglet actif
-  document.querySelectorAll('.tab').forEach((el,i)=> el.classList.toggle('active', i===idx));
-  // Si déjà chargé, afficher ; sinon, charger puis afficher
+  // Mise à jour de l'onglet actif
+  document.querySelectorAll('.tab').forEach((el, i) => el.classList.toggle('active', i === idx));
+  // Affichage ou chargement
   if (destinationsData[idx]) {
     renderTabContent(idx);
   } else {
     fetch('assets/data/destinations.json')
-      .then(r=>r.json())
-      .then(destinations=> loadDestination(destinations[idx], idx));
+      .then(r => r.json())
+      .then(destinations => loadDestination(destinations[idx], idx))
+      .catch(e => console.error('Erreur reload destinations:', e));
   }
 }
