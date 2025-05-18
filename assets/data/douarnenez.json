@@ -1,14 +1,341 @@
 {
   "balades": [
-    {"titre": "Sentier des Plomarc’h → Plage du Ris", "description": "4 km A/R…", "image": "plomarch.jpg"},
-    …
+    {
+      "titre": "Circuit de la sardine à Douarnenez",
+      "distance_km": 4.5,
+      "type": "boucle",
+      "point_depart": "Belvédère des Plomarc’h (Douarnenez)",
+      "stationnement": "Parking du site des Plomarc’h, Rue du Carrefour, Douarnenez",
+      "plage": false,
+      "distance_route_km": 0,
+      "points_interet": "Parcours historique jalonné de 17 panneaux sur l’histoire sardinière (clous de bronze au sol):contentReference[oaicite:0]{index=0}. Traverse le vieux port du Rosmeur aux façades colorées, passe par venelles et ruelles, Port-Rhu et le front de mer face à l’Île Tristan:contentReference[oaicite:1]{index=1}.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Port_Douarnenez.JPG"
+    },
+    {
+      "titre": "Petit boucle autour du Port-Rhu",
+      "distance_km": 4.7,
+      "type": "boucle",
+      "point_depart": "Port-musée / Ria du Pouldavid (Port-Rhu, Douarnenez)",
+      "stationnement": "Parking du Port-Rhu (près de la MJC, le long des quais):contentReference[oaicite:2]{index=2}",
+      "plage": true,
+      "distance_route_km": 0,
+      "points_interet": "Tour de la ria du Pouldavid autour du Port-Rhu:contentReference[oaicite:3]{index=3}. Passerelle Jean-MarIN à franchir le bassin à flot, ancienne voie ferrée Douarnenez-Quimper reconvertie en voie verte, panorama sur l’Île Tristan, Plage des Dames et port de plaisance du Port-Rhu avec ses bateaux du Port-musée:contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Port_Rhu_Douarnenez.jpg/2560px-Port_Rhu_Douarnenez.jpg"
+    },
+    {
+      "titre": "Site naturel des Plomarc’h",
+      "distance_km": 2.0,
+      "type": "boucle",
+      "point_depart": "Rue du Carrefour, Douarnenez (parking des Plomarc’h)",
+      "stationnement": "Parking gratuit au début du sentier des Plomarc’h, Rue du Carrefour",
+      "plage": false,
+      "distance_route_km": 0,
+      "points_interet": "Balade familiale sur le sentier côtier des Plomarc’h. Vues panoramiques sur la baie de Douarnenez:contentReference[oaicite:6]{index=6}, vestiges gallo-romains (cuves à garum), lavoirs anciens:contentReference[oaicite:7]{index=7}. Ferme pédagogique avec animaux (basse-cour, jardins) et ancien village de pêcheurs aux \"pentys\" restaurés:contentReference[oaicite:8]{index=8}:contentReference[oaicite:9]{index=9}. Aire de jeux en fin de parcours.",
+      "image_url": null
+    },
+    {
+      "titre": "Tréboul – Sables Blancs et vieux quartier",
+      "distance_km": 6.2,
+      "type": "boucle",
+      "point_depart": "Port de Tréboul (Port de Plaisance, Douarnenez)",
+      "stationnement": "Parking du Port de Plaisance de Tréboul (Quai de l’Yser, Douarnenez)",
+      "plage": true,
+      "distance_route_km": 2,
+      "points_interet": "Découverte du quartier marin de Tréboul:contentReference[oaicite:10]{index=10}. Parcours dans le cœur ancien (rues piétonnes, venelles) suivi d’un tronçon côtier depuis la Plage des Sables Blancs avec vue sur la baie:contentReference[oaicite:11]{index=11}. Points d’intérêt : Chapelle maritime Saint-Jean, cimetière marin de Tréboul, panorama depuis la corniche, port de plaisance animé.",
+      "image_url": null
+    },
+    {
+      "titre": "Douarnenez – Ville aux trois ports",
+      "distance_km": 8.3,
+      "type": "boucle",
+      "point_depart": "Quai du Port du Rosmeur (vieux port), Douarnenez",
+      "stationnement": "Parking du port du Rosmeur (Vieux-port) ou parking du Centre-ville",
+      "plage": false,
+      "distance_route_km": 0,
+      "points_interet": "Flânerie urbaine à la découverte de Douarnenez, ville sardinière aux trois ports:contentReference[oaicite:12]{index=12}. Circuit passant par le vieux port du Rosmeur (ancien port de pêche), le Port-Rhu et ses bateaux traditionnels, puis le port du Rosmeur (port de pêche actuel):contentReference[oaicite:13]{index=13}. Découverte de ruelles pittoresques, de la chapelle Saint-Michel, et du site naturel des Plomarc’h en surplomb de la mer.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Port_Douarnenez.JPG"
+    },
+    {
+      "titre": "Sentier côtier Trezmalaouen – Kervel",
+      "distance_km": 10.9,
+      "type": "aller-retour",
+      "point_depart": "Parking de la Plage de Trezmalaouen (Kerlaz, 29550)",
+      "stationnement": "Parking de la plage de Trezmalaouen, Kerlaz",
+      "plage": true,
+      "distance_route_km": 8,
+      "points_interet": "Portion du GR34 longeant le fond de la Baie de Douarnenez:contentReference[oaicite:14]{index=14}. Départ au pied des falaises de Kerlaz (Trezmalaouen), suivi des plages de Trezmalaouen et de Kervel sur un sentier côtier offrant de magnifiques perspectives sur la baie et la ville de Douarnenez:contentReference[oaicite:15]{index=15}. Possible observation de la faune marine (oiseaux, dauphins occasionnels) et flore dunaire.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/1423_Plage_de_Trezmalaouen.jpg"
+    },
+    {
+      "titre": "Dune et plage de Sainte-Anne-la-Palud",
+      "distance_km": 7.4,
+      "type": "boucle",
+      "point_depart": "Chapelle Sainte-Anne-la-Palud (Plonévez-Porzay, 29550)",
+      "stationnement": "Parking du sanctuaire Sainte-Anne-la-Palud",
+      "plage": true,
+      "distance_route_km": 12,
+      "points_interet": "Boucle nature entre mer et campagne à Sainte-Anne-la-Palud:contentReference[oaicite:16]{index=16}. Cheminement le long du massif dunaire et de la grande plage de Sainte-Anne-la-Palud, puis à travers la roselière de Kervijen (zone humide riche en oiseaux):contentReference[oaicite:17]{index=17}. Retour par de petits chemins de campagne avec vues sur toute la Baie de Douarnenez. Passage possible par la chapelle Sainte-Anne-la-Palud (lieu de pèlerinage).",
+      "image_url": null
+    },
+    {
+      "titre": "Locronan et sentiers du bocage",
+      "distance_km": 9.7,
+      "type": "boucle",
+      "point_depart": "Place de l’Église, Locronan (29180)",
+      "stationnement": "Parking gratuit de Locronan (Entrée du bourg, près de la Poste)",
+      "plage": false,
+      "distance_route_km": 15,
+      "points_interet": "Découverte de Locronan, petite cité de caractère (architecture Renaissance en granit) puis des chemins creux du bocage locronnais:contentReference[oaicite:18]{index=18}. Passage en lisière du Bois du Névet et montée jusqu’à un point culminant offrant un beau panorama sur la Baie de Douarnenez:contentReference[oaicite:19]{index=19}. Patrimoine : église Saint-Ronan, anciens ateliers de tisserands, fontaines et chapelle Notre-Dame-de-Bonne-Nouvelle sur le parcours.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Maison_%C3%A0_Locronan.jpg/1024px-Maison_%C3%A0_Locronan.jpg"
+    },
+    {
+      "titre": "Forêt du Névet (depuis Kerlaz)",
+      "distance_km": 11.4,
+      "type": "boucle",
+      "point_depart": "Bourg de Kerlaz (place de l’Église, 29100)",
+      "stationnement": "Parking de l’église de Kerlaz",
+      "plage": false,
+      "distance_route_km": 5,
+      "points_interet": "Immersion en sous-bois dans le vaste Bois du Névet (225 ha):contentReference[oaicite:20]{index=20}. Le sentier descend la vallée du Névet (ruisseau du Névet) puis remonte en contournant la lisière de la forêt:contentReference[oaicite:21]{index=21}. Ambiance fraîche et ombragée en été, feuillages colorés en automne. Calme propice à l’observation des oiseaux forestiers. Parcours vallonné mais accessible. Aucune plage sur l’itinéraire.",
+      "image_url": null
+    },
+    {
+      "titre": "Allée des Korrigans et chapelle Saint-They",
+      "distance_km": 9.2,
+      "type": "boucle",
+      "point_depart": "Place de l’Église, Poullan-sur-Mer (29100)",
+      "stationnement": "Parking de l’église de Poullan-sur-Mer",
+      "plage": false,
+      "distance_route_km": 10,
+      "points_interet": "Circuit campagnard à Poullan-sur-Mer autour du petit patrimoine:contentReference[oaicite:22]{index=22}. Visite de l’allée couverte des Korrigans “Ti ar C’horriged” (dolmen néolithique):contentReference[oaicite:23]{index=23} puis passage par la chapelle Saint-They, nichée dans un coin de verdure:contentReference[oaicite:24]{index=24}. Sentiers creux et chemins ruraux fleuris au printemps. Possibilité de rencontrer des animaux de ferme en prairie. Aucune portion côtière, parcours entièrement intérieur (pas de plage).",
+      "image_url": null
+    },
+    {
+      "titre": "Pointe du Millier et moulin de Kériolet",
+      "distance_km": 10.4,
+      "type": "boucle",
+      "point_depart": "Parking de la Pointe du Millier (Beuzec-Cap-Sizun, 29790)",
+      "stationnement": "Parking de la Pointe du Millier (suivre \"Phare du Millier\" à Beuzec-Cap-Sizun)",
+      "plage": false,
+      "distance_route_km": 22,
+      "points_interet": "Randonnée panoramique sur le Cap Sizun. Depuis le phare/maison-feu du Millier (sur falaise):contentReference[oaicite:25]{index=25}, le sentier côtier (GR34) offre des vues spectaculaires sur l’océan et vers la presqu’île de Crozon au loin:contentReference[oaicite:26]{index=26}. Découverte du Moulin de Kériolet (ancien moulin à eau restauré) niché dans la vallée du Loc’h, ensembles mégalithiques cachés dans la lande, et petite chapelle Saint-Conogan en retrait. Retour par l’intérieur des terres. Possibilité de voir des phoques ou des fous de Bassan en mer.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Beuzec-Cap-Sizun_-_Pointe_du_Millier_02.jpg"
+    },
+    {
+      "titre": "Hauteurs de Menez Lié et chapelles",
+      "distance_km": 11.5,
+      "type": "boucle",
+      "point_depart": "Parking de la plage de Lestrevet (Plomodiern, 29550)",
+      "stationnement": "Parking de la plage de Lestrevet, Plomodiern",
+      "plage": true,
+      "distance_route_km": 25,
+      "points_interet": "Boucle combinant patrimoine religieux et vue mer. Départ plage de Lestrevet puis montée vers le dolmen de Menez Lié sur les hauteurs (site mégalithique):contentReference[oaicite:27]{index=27}. Passage à la chapelle Saint-Suliau puis descente en direction de la baie avec un deuxième arrêt à la chapelle Saint-Côme-et-Saint-Damien:contentReference[oaicite:28]{index=28}:contentReference[oaicite:29]{index=29}. Retour en longeant la longue plage de Pentrez (possible char à voile). Vue dégagée sur la baie tout au long du parcours.",
+      "image_url": null
+    },
+    {
+      "titre": "Circuit des moulins de Pouldergat (N-O)",
+      "distance_km": 8.7,
+      "type": "boucle",
+      "point_depart": "Place de la Mairie, Pouldergat (29100)",
+      "stationnement": "Parking de la mairie de Pouldergat",
+      "plage": false,
+      "distance_route_km": 9,
+      "points_interet": "Parcours rural autour de Pouldergat, suivant en partie le “circuit des Moulins”:contentReference[oaicite:30]{index=30}. Chemins creux et vallées ombragées le long de petits ruisseaux:contentReference[oaicite:31]{index=31}. Vestiges de plusieurs moulins à eau autrefois actifs (murs en pierre le long du sentier). Découverte du petit patrimoine : fontaines, calvaires et le manoir de Kergoff (vue extérieure). Randonnée paisible, idéale pour observer la flore des sous-bois et des talus (fougères, hortensias).",
+      "image_url": null
+    },
+    {
+      "titre": "Chapelle Sainte-Brigitte et Bois du Névet",
+      "distance_km": 11.2,
+      "type": "boucle",
+      "point_depart": "Le Juch (parking de l’ancienne école, 29100)",
+      "stationnement": "Parking près de l’église du Juch",
+      "plage": false,
+      "distance_route_km": 10,
+      "points_interet": "Boucle bucolique entre vallée et forêt. Départ du ruisseau du Ris au Juch, montée vers la lisière du Bois du Névet en empruntant chemins et petites routes de campagne:contentReference[oaicite:32]{index=32}. Halte à la chapelle Sainte-Brigitte isolée dans un écrin de verdure (XVIIᵉ siècle):contentReference[oaicite:33]{index=33}. Retour partiel par l’ancienne voie ferrée Douarnenez-Quimper (devenue voie verte) avec panneaux d’interprétation sur l’histoire locale. Belle vue sur la campagne du Juch et la baie par moments.",
+      "image_url": null
+    },
+    {
+      "titre": "Vallée du Goyen et Guiler-sur-Goyen",
+      "distance_km": 9.5,
+      "type": "boucle",
+      "point_depart": "Église de Guiler-sur-Goyen (29710)",
+      "stationnement": "Parking de l’église de Guiler-sur-Goyen",
+      "plage": false,
+      "distance_route_km": 25,
+      "points_interet": "Promenade au fil de la rivière du Goyen dans un paysage de bocage. Le sentier longe les berges boisées du Goyen, offrant fraîcheur et sérénité. Découverte de moulins à eau désaffectés et de ponts de pierre couverts de mousses. Faune riche : hérons, canards sauvages et libellules près de l’eau. Sur les hauteurs, petits villages typiques (maisons en pierre, petits calvaires). Boucle facile, idéale par temps chaud.",
+      "image_url": null
+    },
+    {
+      "titre": "Chapelle de Kérinec et campagne de Confort-Meilars",
+      "distance_km": 11.0,
+      "type": "boucle",
+      "point_depart": "Place de l’Église, Confort-Meilars (29790)",
+      "stationnement": "Parking de l’église de Confort-Meilars",
+      "plage": false,
+      "distance_route_km": 28,
+      "points_interet": "Circuit champêtre autour de Confort-Meilars:contentReference[oaicite:34]{index=34}. Départ devant le grand calvaire de l’église (XVIᵉ siècle). Passage par la chapelle Notre-Dame de Kérinec isolée dans la campagne (charpente en bois remarquable):contentReference[oaicite:35]{index=35}. Chemins bordés de talus et d’hortensias, traversant des villages aux maisons en pierre. En été, présence de champs de blé et de maïs. Vue lointaine sur la Baie d’Audierne depuis certains points élevés. Randonnée calme hors des sentiers touristiques.",
+      "image_url": null
+    },
+    {
+      "titre": "Étang de Poulguidou et Lambabu (Mahalon)",
+      "distance_km": 11.0,
+      "type": "boucle",
+      "point_depart": "Bourg de Mahalon (Place de l’Église, 29790)",
+      "stationnement": "Parking de la mairie ou de l’église de Mahalon",
+      "plage": false,
+      "distance_route_km": 26,
+      "points_interet": "Parcours varié entre sous-bois, étang et patrimoine rural:contentReference[oaicite:36]{index=36}. Traversée d’une zone boisée protégée (captage d’eau) menant à l’étang de Poulguidou, site paisible propice à l’observation des canards et libellules:contentReference[oaicite:37]{index=37}. Passage par le hameau traditionnel de Lambabu et sa chapelle Saint-Tugdual du XVIᵉ siècle:contentReference[oaicite:38]{index=38}. Présence de plusieurs fontaines et d’un petit patrimoine religieux tout au long du trajet. Boucle sans difficulté majeure, très nature.",
+      "image_url": null
+    },
+    {
+      "titre": "Boucle de Stang Vraz (Haute vallée du Goyen)",
+      "distance_km": 4.1,
+      "type": "boucle",
+      "point_depart": "Parking de Stang Vraz (Guiler-sur-Goyen, 29710)",
+      "stationnement": "Petit parking aménagé à l’entrée du sentier de Stang Vraz",
+      "plage": false,
+      "distance_route_km": 20,
+      "points_interet": "Petite boucle sauvage dans la haute vallée du Goyen:contentReference[oaicite:39]{index=39}. Sentier peu fréquenté qui s’enfonce dans une lande boisée et vallonnée, offrant un calme absolu:contentReference[oaicite:40]{index=40}. Le chemin serpente au bord d’un petit ruisseau, sous les chênes et châtaigniers couverts de lierre. Atmosphère mystérieuse propice aux légendes (toponyme local « vallée des korrigans »). Aucun équipement particulier sur la route, mais la brièveté du parcours en fait une balade idéale avec de jeunes enfants.",
+      "image_url": null
+    }
   ],
-  "surf": [
-    {"titre": "Spot de Tréboul", "description": "Vagues douces…", "image": "surf_douarnenez1.jpg"},
-    …
+  "restaurants": [
+    {
+      "nom": "Crêperie Au Goûter Breton",
+      "adresse": "9 rue Anatole France, 29100 Douarnenez",
+      "specialites": "Crêpes et galettes bretonnes",
+      "distance_route_km": 1,
+      "equipements_enfants": "Chaises hautes disponibles, coin coloriage",
+      "menu_enfant": true,
+      "sans_gluten": "Galettes de sarrasin naturellement sans gluten; crêpes sans gluten sur demande",
+      "lien": "https://goo.gl/maps/XXX1"
+    },
+    {
+      "nom": "L’Esquisse",
+      "adresse": "36 quai de l’Yser, 29100 Douarnenez (Tréboul)",
+      "specialites": "Cuisine française traditionnelle, poisson et fruits de mer",
+      "distance_route_km": 2,
+      "equipements_enfants": "Menu enfant, terrasse avec espace pour poussettes",
+      "menu_enfant": true,
+      "sans_gluten": "Options sans gluten signalées sur la carte (ex: poisson grillé, légumes)",
+      "lien": "https://goo.gl/maps/XXX2"
+    },
+    {
+      "nom": "La Regal’ette",
+      "adresse": "3 rue Duguay-Trouin, 29100 Douarnenez",
+      "specialites": "Pizzas au feu de bois, salades",
+      "distance_route_km": 0.5,
+      "equipements_enfants": "Chaise haute, crayons de couleur fournis",
+      "menu_enfant": true,
+      "sans_gluten": "Pâte à pizza sans gluten disponible sur demande",
+      "lien": "https://goo.gl/maps/XXX3"
+    },
+    {
+      "nom": "Crêperie Ty Mad",
+      "adresse": "13 rue du Port Rhu, 29100 Douarnenez",
+      "specialites": "Crêperie bretonne, produits locaux",
+      "distance_route_km": 1.5,
+      "equipements_enfants": "Menu enfant (galette jambon-fromage + crêpe sucre), chaise haute",
+      "menu_enfant": true,
+      "sans_gluten": "Galettes de blé noir sans gluten; cidre et jus locaux sans gluten",
+      "lien": "https://goo.gl/maps/XXX4"
+    },
+    {
+      "nom": "Le Clos de Vallombreuse (restaurant de l’hôtel)",
+      "adresse": "7 rue d’Estienne d’Orves, 29100 Douarnenez",
+      "specialites": "Gastronomique breton (poissons, viandes locales)",
+      "distance_route_km": 0.8,
+      "equipements_enfants": "Chaises hautes, grand jardin pour se dégourdir",
+      "menu_enfant": false,
+      "sans_gluten": "Adaptation possible des plats (sauces à part, alternatives sans gluten proposées)",
+      "lien": "https://goo.gl/maps/XXX5"
+    },
+    {
+      "nom": "L’Insolite",
+      "adresse": "14 quai du Grand Port, 29100 Douarnenez (Tréboul)",
+      "specialites": "Brasserie (burgers, moules-frites, salades)",
+      "distance_route_km": 2,
+      "equipements_enfants": "Menu enfant (burger ou poisson pané + frites), rehausseurs",
+      "menu_enfant": true,
+      "sans_gluten": "Burgers sans pain sur demande, salades sans gluten disponibles",
+      "lien": "https://goo.gl/maps/XXX6"
+    },
+    {
+      "nom": "La Trattoria",
+      "adresse": "22 rue Jean Jaurès, 29100 Douarnenez",
+      "specialites": "Cuisine italienne (pâtes, pizzas, antipasti)",
+      "distance_route_km": 0.3,
+      "equipements_enfants": "Chaise haute, petite aire de jeux coin salle",
+      "menu_enfant": true,
+      "sans_gluten": "Pâtes sans gluten sur demande, pizzas possibles sans gluten avec préavis",
+      "lien": "https://goo.gl/maps/XXX7"
+    },
+    {
+      "nom": "Le Croquant",
+      "adresse": "9 boulevard du Général de Gaulle, 29100 Douarnenez",
+      "specialites": "Sandwicherie, salades, plats du jour maison",
+      "distance_route_km": 0.2,
+      "equipements_enfants": "Sièges enfants, service rapide pour familles pressées",
+      "menu_enfant": false,
+      "sans_gluten": "Salades variées sans gluten, sandwiches sur pain sans gluten disponibles",
+      "lien": "https://goo.gl/maps/XXX8"
+    },
+    {
+      "nom": "Au Petit Goudier",
+      "adresse": "1 rue du Docteur Mével, 29100 Douarnenez",
+      "specialites": "Bistrot / cuisine du marché (ardoise renouvelée)",
+      "distance_route_km": 1.2,
+      "equipements_enfants": "Coloriages offerts, table à langer en toilette",
+      "menu_enfant": false,
+      "sans_gluten": "Plats cuisinés minute, adaptations sans gluten possibles (exclure sauce, changer accompagnement)",
+      "lien": "https://goo.gl/maps/XXX9"
+    },
+    {
+      "nom": "Crêperie Lannig",
+      "adresse": "2 rue du Couédic, 29100 Douarnenez",
+      "specialites": "Crêpes, galettes, glaces artisanales",
+      "distance_route_km": 0.4,
+      "equipements_enfants": "Menu enfant (mini-galette + dessert), terrasse fermée sécurisée",
+      "menu_enfant": true,
+      "sans_gluten": "Galettes de sarrasin 100% blé noir (sans gluten), éventuellement crêpes sans gluten sur demande",
+      "lien": "https://goo.gl/maps/XXX10"
+    }
   ],
-  "resto": [
-    {"titre": "Crêperie Le Marin", "description": "Spécialités locales…", "image": "creperie.jpg", "url": "https://…"},
-    …
+  "surfs": [
+    {
+      "nom": "École de Surf de Bretagne – Douarnenez",
+      "adresse": "Plage du Ris, 29100 Douarnenez",
+      "age_minimum": 6,
+      "tarifs_enfants": "Cours enfant débutant (1h30) : ~35€; stage 5 jours : ~150€",
+      "url": "http://www.surf-douarnenez.com"
+    },
+    {
+      "nom": "Surf Audierne ESB Cap-Sizun",
+      "adresse": "Plage de Trescadec, 29770 Audierne",
+      "age_minimum": 5,
+      "tarifs_enfants": "Cours collectif 1h : 30€; forfait 5 cours : 130€ (matériel inclus)",
+      "url": "http://www.surf-audierne.com"
+    },
+    {
+      "nom": "Surfing Sardine (École de Surf Plonévez-Porzay)",
+      "adresse": "Plage de Sainte-Anne-la-Palud, 29550 Plonévez-Porzay",
+      "age_minimum": 5,
+      "tarifs_enfants": "Séance découverte enfant (1h) : 25€; stage 3 jours : 70€",
+      "url": "http://www.surfing-sardine.fr"
+    },
+    {
+      "nom": "Koba Surf Camp Crozon (itinérant Douarnenez)",
+      "adresse": "Adresse administrative : 19 rue du Phare, 29100 Douarnenez",
+      "age_minimum": 8,
+      "tarifs_enfants": "Cours mobile sur plages alentours : ~40€ la session (tarif dégressif en stage)",
+      "url": "https://www.kobasurfbreizh.bzh"
+    },
+    {
+      "nom": "ESB Presqu’île de Crozon (Saint-Nic)",
+      "adresse": "Plage de Pentrez, 29550 Saint-Nic",
+      "age_minimum": 6,
+      "tarifs_enfants": "Cours enfant (1h30) : 30€; formule 5 cours : 130€",
+      "url": "https://www.surf-crozon.com"
+    }
   ]
 }
