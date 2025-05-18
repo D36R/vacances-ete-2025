@@ -4,49 +4,18 @@
   <meta charset="UTF-8">
   <title>Vacances été 2025 – Planning</title>
   <style>
-    body{
-      font-family:Arial,Helvetica,sans-serif;
-      background:#f6f7fb;
-      margin:0;
-      padding:0;
-    }
-    .tabs{
-      display:flex;
-      background:#2563eb;
-      border-radius:8px 8px 0 0;
-      overflow:hidden;
-      margin:30px auto 0;
-      max-width:800px;
-      box-shadow:0 2px 8px #0002;
-    }
-    .tab{
-      flex:1;
-      text-align:center;
-      padding:18px 0;
-      cursor:pointer;
-      background:#2563eb;
-      color:#fff;
-      font-weight:600;
-      transition:background .2s;
-      border:none;
-      outline:none;
-    }
+    body{font-family:Arial,Helvetica,sans-serif;background:#f6f7fb;margin:0;padding:0;}
+    .tabs{display:flex;background:#2563eb;border-radius:8px 8px 0 0;overflow:hidden;margin:30px auto 0;max-width:800px;box-shadow:0 2px 8px #0002;}
+    .tab{flex:1;text-align:center;padding:18px 0;cursor:pointer;background:#2563eb;color:#fff;font-weight:600;transition:background .2s;border:none;outline:none;}
     .tab.active{background:#fff;color:#2563eb;}
-    .tab-content{
-      display:none;
-      background:#fff;
-      max-width:800px;
-      margin:0 auto 40px;
-      padding:32px;
-      border-radius:0 0 8px 8px;
-      box-shadow:0 2px 8px #0002;
-    }
+    .tab-content{display:none;background:#fff;max-width:800px;margin:0 auto 40px;padding:32px;border-radius:0 0 8px 8px;box-shadow:0 2px 8px #0002;}
     .tab-content.active{display:block;}
     h2,h3{color:#2563eb;margin-top:0;}
     .dates{font-size:1.1em;color:#444;margin-bottom:24px;}
     ul{padding-left:20px;}
-    li{margin-bottom:14px;line-height:1.5em;}
+    li{margin-bottom:24px;line-height:1.5em;}
     .note{font-style:italic;color:#555;margin-bottom:18px;}
+    .route-img{width:100%;max-width:300px;border-radius:8px;margin-top:8px;}
     @media(max-width:820px){.tab-content,.tabs{max-width:100%}.tab-content{padding:20px}}
   </style>
 </head>
@@ -54,88 +23,67 @@
 
   <div class="tabs">
     <button class="tab active" onclick="showTab(0)">Douarnenez</button>
-    <button class="tab" onclick="showTab(1)">Île‑aux‑Moines</button>
+    <button class="tab" onclick="showTab(1)">Île-aux-Moines</button>
     <button class="tab" onclick="showTab(2)">Quiberon</button>
   </div>
 
   <!-- Douarnenez -->
   <div class="tab-content active">
     <h2>Appartement · Douarnenez</h2>
-    <p class="dates">📅 25 juillet → 4 août • 📍 25 Rue des Professeurs‑Curie, 29100 Douarnenez</p>
-
-    <h3>Écoles de surf (8 ans)</h3>
+    <p class="dates">📅 25 juillet → 4 août • 📍 25 Rue des Professeurs-Curie, 29100 Douarnenez</p>
+    <p class="note">Découvrez Douarnenez sous un nouveau jour : entre criques secrètes, panoramas marins et vestiges historiques, chaque balade offre une immersion ludique et dépaysante pour toute la famille.</p>
+    <h3>Balades familiales (2–10 km)</h3>
     <ul>
-      <li><strong>Breizh Road Surfing</strong> – Plage du Ris / Sables Blancs (cours Kids dès 8 ans).</li>
-      <li><strong>Penn Ar Surf School</strong> – Plage de Kervel (15 min de route, séances 5‑12 ans).</li>
-    </ul>
-
-    <h3>Balades familiales (2–10 km)</h3>
-    <ul>
-      <li><strong>Sentier des Plomarc’h → Plage du Ris</strong> • 4 km A/R • Parking Plomarc’h • Chevaux & goats, jeux d’enfants, plage surveillée.</li>
-      <li><strong>Port de Tréboul – Roches Blanches – Grotte Kerandraon</strong> • 6 km boucle • Parking Port de Tréboul • Falaises & grotte cachée.</li>
-      <li><strong>Kervel – Isella – Tréfeuntec</strong> • 6,4 km boucle • Parking Plage de Kervel • Superbes points‑de‑vue + baignade.</li>
-      <li><strong>Pointe de Tal ar Grip – Plage de Pentrez</strong> • 8 km A/R • Parking Tal ar Grip • GR34 + longue plage.</li>
-      <li><strong>Boucle Port Rhu & Tréboul</strong> • 5 km • Parking Port Rhu • Port, vieux gréements, glaces sur les quais.</li>
-      <li><strong>Circuit mégalithes de Poullan‑sur‑Mer</strong> • 9,5 km boucle • Parking Allée‑Couverte de Lesconil • Dolmens + vue mer.</li>
-      <li><strong>Sables Blancs → Roches Blanches</strong> • 5 km A/R • Parking Plage des Sables Blancs • Eau turquoise & tables de pique‑nique.</li>
-      <li><strong>Circuit Kerlaz – Trezmalaouen</strong> • 6 km • Parking Trezmalaouen • Forêt & plage familiale.</li>
-      <li><strong>Port Rosmeur – Pointe du Lézard</strong> • 4 km • Parking Port Rosmeur • Quartier historique + panorama baie.</li>
-      <li><strong>Bois du Névet</strong> • 5 km boucle ombragée • Parking Kerlaz/Bois du Névet • Idéal poussettes & journée chaude.</li>
+      <li><strong>Sentier des Plomarc’h → Plage du Ris</strong> • 4 km A/R • Parking Plomarc’h<br>Promenade en douceur le long des falaises, observation de chevaux et chèvres en liberté, suivie d’un pique-nique sur la plage surveillée.<br><img src="images/plomarch.jpg" alt="Sentier des Plomarc’h" class="route-img"></li>
+      <li><strong>Port de Tréboul – Roches Blanches – Grotte Kerandraon</strong> • 6 km boucle • Parking Port de Tréboul<br>Exploration de falaises sculptées par la mer, découverte d’une grotte secrète et pause goûter face à la baie.<br><img src="images/kerandraon.jpg" alt="Grotte Kerandraon" class="route-img"></li>
+      <li><strong>Kervel – Isella – Tréfeuntec</strong> • 6,4 km boucle • Parking Plage de Kervel<br>Itinéraire panoramique surplombant la baie, se terminant par une baignade rafraîchissante dans les eaux claires.<br><img src="images/trefeuntec.jpg" alt="Plage de Tréfeuntec" class="route-img"></li>
+      <li><strong>Pointe de Tal ar Grip – Plage de Pentrez</strong> • 8 km A/R • Parking Tal ar Grip<br>Randonnée sur le GR34 jusqu’à la longue plage de Pentrez, parfaite pour courir, construire des châteaux de sable et admirer le coucher de soleil.<br><img src="images/pentrez.jpg" alt="Plage de Pentrez" class="route-img"></li>
+      <li><strong>Boucle Port Rhu & Tréboul</strong> • 5 km • Parking Port Rhu<br>Balade portuaire parmi les vieux gréements, avec dégustation de glaces artisanales et vue sur les voiliers colorés.<br><img src="images/port_rhu.jpg" alt="Port Rhu" class="route-img"></li>
+      <li><strong>Circuit mégalithes de Poullan‑sur‑Mer</strong> • 9,5 km boucle • Parking Allée‑Couverte de Lesconil<br>Parcours culturel entre dolmens millénaires et panoramas marins, idéal pour petits apprentis archéologues.<br><img src="images/poullan.jpg" alt="Mégalithes de Poullan-sur-Mer" class="route-img"></li>
+      <li><strong>Sables Blancs → Roches Blanches</strong> • 5 km A/R • Parking Plage des Sables Blancs<br>Marche les pieds dans l’eau turquoise jusqu’aux falaises, avec tables de pique-nique et coquillages à ramasser.<br><img src="images/sables_blancs.jpg" alt="Sables Blancs" class="route-img"></li>
+      <li><strong>Circuit Kerlaz – Trezmalaouen</strong> • 6 km • Parking Trezmalaouen<br>Sentier mixte forêt-plage, ombragé puis ensoleillé, facile pour les enfants et les poussettes.<br><img src="images/trezmalaouen.jpg" alt="Trezmalaouen" class="route-img"></li>
+      <li><strong>Port Rosmeur – Pointe du Lézard</strong> • 4 km • Parking Port Rosmeur<br>Visite du quartier historique et montée vers un promontoire offrant une vue imprenable sur la baie de Douarnenez.<br><img src="images/rosmeur.jpg" alt="Port Rosmeur" class="route-img"></li>
+      <li><strong>Bois du Névet</strong> • 5 km boucle ombragée • Parking Kerlaz/Bois du Névet<br>Refuge frais et boisé, parfait pour une balade détente en forêt, loin du vent marin.<br><img src="images/bois_nevet.jpg" alt="Bois du Névet" class="route-img"></li>
     </ul>
   </div>
 
-  <!-- Île‑aux‑Moines -->
+  <!-- Île-aux-Moines -->
   <div class="tab-content">
-    <h2>Maison · Île‑aux‑Moines</h2>
-    <p class="dates">📅 4 → 8 août • 📍 11 Rue du Couvent, 56780 Île‑aux‑Moines</p>
-
-    <h3>Écoles de surf (accès côté océan)</h3>
-    <p class="note">On traverse le golfe (bateau) puis 1h 15 de route vers la presqu’île de Quiberon.</p>
+    <h2>Maison · Île-aux-Moines</h2>
+    <p class="dates">📅 4 → 8 août • 📍 11 Rue du Couvent, 56780 Île-aux-Moines</p>
+    <p class="note">Après une traversée pittoresque en bateau, partez à la découverte de l’île aux mille ruelles fleuries, entre océan et campagne.</p>
+    <h3>Balades familiales (2–10 km)</h3>
     <ul>
-      <li>Nature School Quiberon – Plage de Penthièvre.</li>
-      <li>Quiberon Surf Paradise – Plage de Port‑Bara.</li>
-      <li>Le Jardin des Vagues – Plouharnel.</li>
-    </ul>
-
-    <h3>Balades familiales (2–10 km)</h3>
-    <ul>
-      <li><strong>Circuit vert – Bourg</strong> • 2 km • Départ embarcadère • Ruelles fleuries, aire de jeux.</li>
-      <li><strong>Circuit jaune – Pointe du Trec’h</strong> • 5 km • Départ Bourg • Pique‑nique + petite plage au retour.</li>
-      <li><strong>Circuit rouge – Pointe de Brouël</strong> • 6 km • Rochers & panorama îles du golfe.</li>
-      <li><strong>Circuit bleu – Pointe de Penhap</strong> • 10 km • Grandes plages sauvages côté sud.</li>
-      <li><strong>Boucle Trec’h → Port Miquel</strong> • 4 km • Sente ostréicole + cabanes colorées.</li>
-      <li><strong>Boucle Kerno – Dolmen de Penhap</strong> • 5 km • Histoire mégalithique & petite plage.</li>
-      <li><strong>Sentier côte Est – Pointe du Nioul</strong> • 7 km • Forêt de pins + criques.</li>
-      <li><strong>Tour Nord‑Ouest (Bourg → Anse du Guip)</strong> • 8 km • Observatoire oiseaux de mer.</li>
-      <li><strong>Boucle Calvaires & Champs intérieurs</strong> • 5 km • Campagne paisible, figuiers, vues mer.</li>
-      <li><strong>Bourg → Plage des Sarzeau (aller-retour)</strong> • 3 km • Plage familiale, eaux peu profondes.</li>
+      <li><strong>Circuit vert – Bourg</strong> • 2 km • Départ embarcadère<br>Promenade dans le bourg fleuri, découverte des calvaires et aire de jeux ombragée.<br><img src="images/ile_vert.jpg" alt="Circuit vert" class="route-img"></li>
+      <li><strong>Circuit jaune – Pointe du Trec’h</strong> • 5 km • Départ Bourg<br>Itinéraire côtier jusqu’à une crique isolée, idéal pour un repas sur la plage.<br><img src="images/trech.jpg" alt="Pointe du Trec’h" class="route-img"></li>
+      <li><strong>Circuit rouge – Pointe de Brouël</strong> • 6 km<br>Sentier rocheux offrant des vues sur les îles voisines et des bancs pour se reposer.<br><img src="images/brouel.jpg" alt="Pointe de Brouël" class="route-img"></li>
+      <li><strong>Circuit bleu – Pointe de Penhap</strong> • 10 km<br>Grande boucle longeant les plages sauvages du sud, parfait pour observer les oiseaux marins.<br><img src="images/penhap.jpg" alt="Pointe de Penhap" class="route-img"></li>
+      <li><strong>Boucle Trec’h → Port Miquel</strong> • 4 km<br>Promenade ostréicole le long des parcs à huîtres, avec cabanes colorées en toile de fond.<br><img src="images/port_miquel.jpg" alt="Port Miquel" class="route-img"></li>
+      <li><strong>Boucle Kerno – Dolmen de Penhap</strong> • 5 km<br>Parcours mêlant mégalithes et criques secrètes, ambiance mystique garantie.<br><img src="images/dolmen.jpg" alt="Dolmen de Penhap" class="route-img"></li>
+      <li><strong>Sentier côte Est – Pointe du Nioul</strong> • 7 km<br>Marche forestière ponctuée de criques isolées, idéal pour le snorkelling.<br><img src="images/nioul.jpg" alt="Pointe du Nioul" class="route-img"></li>
+      <li><strong>Tour Nord-Ouest (Bourg → Anse du Guip)</strong> • 8 km<br>Itinéraire côtier avec observatoire à oiseaux et panoramas sur le golfe.<br><img src="images/anse_guip.jpg" alt="Anse du Guip" class="route-img"></li>
+      <li><strong>Boucle Calvaires & Champs intérieurs</strong> • 5 km<br>Balade champêtre entre figuiers, calvaires et collines verdoyantes.<br><img src="images/calvaires.jpg" alt="Calvaires et champs" class="route-img"></li>
+      <li><strong>Bourg → Plage des Sarzeau</strong> • 3 km A/R<br>Courte balade jusqu’à une plage familiale aux eaux peu profondes, idéale pour les enfants.<br><img src="images/sarzeau.jpg" alt="Plage des Sarzeau" class="route-img"></li>
     </ul>
   </div>
 
   <!-- Quiberon -->
   <div class="tab-content">
     <h2>Maison · Quiberon</h2>
-    <p class="dates">📅 8 → 15 août • 📍 67 Rue des Ramandeuses, 56170 Quiberon</p>
-
-    <h3>Écoles de surf (8 ans)</h3>
+    <p class="dates">📅 8 → 15 août • 📍 67 Rue des Ramandeuses, 56170 Quiberon</p>
+    <p class="note">Entre la baie abritée et la côte sauvage, Quiberon promet des randonnées variées et des panoramas grandioses.</p>
+    <h3>Balades familiales (2–10 km)</h3>
     <ul>
-      <li>Nature School Quiberon – Penthièvre (10 min).</li>
-      <li>Quiberon Surf Paradise – Port‑Bara.</li>
-      <li>Le Jardin des Vagues – Plouharnel.</li>
-    </ul>
-
-    <h3>Balades familiales (2–10 km)</h3>
-    <ul>
-      <li><strong>Pointe du Conguel loop</strong> • 3 km • Parking Pointe du Conguel • Dolmen + table d’orientation.</li>
-      <li><strong>Pointe du Conguel & plages</strong> • 4 km • Parking Conguel • Sentier littoral, sable fin.</li>
-      <li><strong>Saint‑Julien → Pointe du Conguel</strong> • 7 km • Parking Port Haliguen • Côté baie, plages abritées.</li>
-      <li><strong>Port Maria → Château Turpault</strong> • 6,9 km • Parking Port Maria • Promenade & glaces.</li>
-      <li><strong>Côte Sauvage → Port de pêche</strong> • 6 km • Parking Côte Sauvage • Falaises spectaculaires.</li>
-      <li><strong>Pointe de Quiberon</strong> • 2,3 km • Parking Pointe • Boucle rapide avec vues 360°.</li>
-      <li><strong>Double côte Presqu’île (baie + océan)</strong> • 8 km • Parking Thalasso • Dunes & flore.</li>
-      <li><strong>Boucle Port‑Haliguen → Plage du Conguel</strong> • 5 km • Port de plaisance + baignade.</li>
-      <li><strong>Circuit menhirs Côte Sauvage</strong> • 9 km • Parking Percho • Menhirs & grottes.</li>
-      <li><strong>Vivier → Plage du Goviro</strong> • 4 km • Parking Vivier • Etang, observation faune + plage.</li>
+      <li><strong>Pointe du Conguel loop</strong> • 3 km • Parking Pointe du Conguel<br>Boucle rapide avec dolmen historique et point d’orientation sur la baie.<br><img src="images/conguel.jpg" alt="Pointe du Conguel" class="route-img"></li>
+      <li><strong>Pointe du Conguel & plages</strong> • 4 km • Parking Conguel<br>Extension vers les plages de sable fin, parfaite pour un après-midi baignade.<br><img src="images/conguel_plages.jpg" alt="Plages du Conguel" class="route-img"></li>
+      <li><strong>Saint-Julien → Pointe du Conguel</strong> • 7 km • Parking Port Haliguen<br>Itinéraire côté baie, abrité du vent avec criques et postes d’observation.<br><img src="images/saint_julien.jpg" alt="Saint-Julien" class="route-img"></li>
+      <li><strong>Port Maria → Château Turpault</strong> • 6,9 km • Parking Port Maria<br>Découverte du port de pêche et balade jusqu’au château en ruines, suivi d’une glace au village.<br><img src="images/port_maria.jpg" alt="Port Maria" class="route-img"></li>
+      <li><strong>Côte Sauvage → Port de pêche</strong> • 6 km • Parking Côte Sauvage<br>Sentier spectaculaire le long des falaises, idéal pour photos et sensations fortes.<br><img src="images/cote_sauvage.jpg" alt="Côte Sauvage" class="route-img"></li>
+      <li><strong>Pointe de Quiberon</strong> • 2,3 km • Parking Pointe<br>Petit tour panoramique offrant des vues à 360° sur l’océan et la presqu’île.<br><img src="images/pointe_quiberon.jpg" alt="Pointe de Quiberon" class="route-img"></li>
+      <li><strong>Double côte Presqu’île (baie + océan)</strong> • 8 km • Parking Thalasso<br>Boucle combinant le calme de la baie et la brutalité des vagues de l’Atlantique.<br><img src="images/double_cote.jpg" alt="Double côte" class="route-img"></li>
+      <li><strong>Boucle Port-Haliguen → Plage du Conguel</strong> • 5 km • Port de plaisance<br>Parcours entre yachts et plages secrètes, avec baignade en fin de route.<br><img src="images/haliguen_conguel.jpg" alt="Port Haliguen" class="route-img"></li>
+      <li><strong>Circuit menhirs Côte Sauvage</strong> • 9 km • Parking Percho<br>Exploration de menhirs dressés face à la mer, ambiance mystérieuse garantie.<br><img src="images/menhirs.jpg" alt="Menhirs" class="route-img"></li>
+      <li><strong>Vivier → Plage du Goviro</strong> • 4 km • Parking Vivier<br>Chemin côtier traversant étangs et dunes, parfait pour observer la faune avant la baignade.<br><img src="images/goviro.jpg" alt="Plage du Goviro" class="route-img"></li>
     </ul>
   </div>
 
