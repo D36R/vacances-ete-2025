@@ -1,1 +1,9 @@
-
+{
+  "balades": [
+    {"titre": "Circuit vert – Bourg", "description": "2 km, départ embarcadère", "image": "ile_vert.jpg"}
+  ],
+  "surf": [],
+  "resto": [
+    {"titre": "Crêperie de l’Île", "description": "Crêpes bretonnes", "image": "creperie_ile.jpg", "url": "https://creperie-ile.com"}
+  ]
+}
